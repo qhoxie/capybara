@@ -13,5 +13,5 @@ Capybara.app = Rack::Builder.new do
   end
 end.to_app
 
-Capybara.asset_root = Rails.root.join('public')
+Capybara.asset_root = File.join(Rails.root, 'public')
 
